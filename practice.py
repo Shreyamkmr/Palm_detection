@@ -37,7 +37,7 @@ while(1):
     blur = cv.GaussianBlur(erosion,(5,5),0)
     #ret, thresh = cv.threshold(blur, 127, 255, 0)
 
-    _, contours,_ = cv.findContours(blur, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+   ''' _, contours,_ = cv.findContours(blur, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
 
 
     for cnt in contours:
@@ -49,7 +49,7 @@ while(1):
     cv.convexityDefects(contours,convexhull,convexityDefects_a)
 
    
-    contour_img= cv.drawContours(frame, [[45,50],[40,60]], -1, (0,255,0), 2)
+    contour_img= cv.drawContours(frame, [[45,50],[40,60]], -1, (0,255,0), 2)'''
 
 
 
